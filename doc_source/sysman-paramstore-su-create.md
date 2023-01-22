@@ -17,7 +17,7 @@ The requirements and constraints for parameter names include the following:
 
   In addition, the slash character \( / \) is used to delineate hierarchies in parameter names\. For example: `/Dev/Production/East/Project-ABC/MyParameter`
 + **Valid AMI format**: When you choose `aws:ec2:image` as the data type for a `String` parameter, the ID you enter must validate for the AMI ID format `ami-12345abcdeEXAMPLE`\.
-+ **Fully qualified**: When you create or reference a parameter in a hierarchy, include a leading forward slash character \(/\) \. When you reference a parameter that is part of a hierarchy, specify the entire hierarchy path including the initial slash \(/\)\.
++ **Fully qualified**: When you create or reference a parameter in a hierarchy, include a leading forward slash character \(/\) \.
   + Fully qualified parameter names: `MyParameter1`, `/MyParameter2`, `/Dev/Production/East/Project-ABC/MyParameter`
   + Not fully qualified parameter name: `MyParameter3/L1`
 + **Length**: The maximum length for a parameter name that you create is 1011 characters\. This includes the characters in the ARN that precede the name you specify, such as `arn:aws:ssm:us-east-2:111122223333:parameter/`\.
